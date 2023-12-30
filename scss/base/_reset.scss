@@ -1,0 +1,40 @@
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+section {
+  padding-bottom: 94px;
+}
+
+.adress {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+    fill: var(--brand-color);
+  }
+}

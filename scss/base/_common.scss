@@ -1,0 +1,28 @@
+body {
+    color: var(--background-color);
+    font-family: var(--main-font);
+}
+
+.logo {
+    color: var(--brand-color);
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    line-height: normal;
+    transition: color var(--primary-transition);
+    margin-bottom: 20px;
+    display: block;
+
+    &__black {
+    color: var(--main-color);
+    }
+
+    &__white {
+    color: var(--background-color);
+    }
+}
+
+button {
+    border: none;
+}

@@ -1,0 +1,32 @@
+// utils
+
+@import './utils/vars';
+@import './utils/visually-hidden';
+
+
+// base styles
+
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+// components 
+
+@import './components/portfolio-btn';
+@import './components/modal-form';
+@import './components/overlay';
+@import './components/socials';
+@import './components/submission'; 
+
+// layouts
+
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/job';
+@import './layouts/portfolio';
+@import './layouts/section-1';
+@import './layouts/section-2';
+@import './layouts/team';
+
+
