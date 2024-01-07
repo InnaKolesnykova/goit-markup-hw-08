@@ -1,5 +1,6 @@
 // utils
 
+@import './utils/mixin';
 @import './utils/vars';
 @import './utils/visually-hidden';
 
@@ -12,9 +13,9 @@
 
 // components 
 
-@import './components/portfolio-btn';
 @import './components/modal-form';
 @import './components/overlay';
+@import './components/portfolio-btn';
 @import './components/socials';
 @import './components/submission'; 
 
