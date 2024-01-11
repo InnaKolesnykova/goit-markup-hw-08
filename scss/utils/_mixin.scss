@@ -6,19 +6,19 @@
 
 
     @if $type =='mobile' {
-        @media screen and (min-width:$mobile) {
+        @media screen and (max-width:$mobile) {
             @content;
         }
     }
 
     @if $type =='tablet' {
-        @media screen and (min-width:$tablet) {
+        @media screen and (max-width:$tablet) {
             @content;
         }
     }
 
     @if $type =='desktop' {
-        @media screen and (min-width:$desktop) {
+        @media screen and (max-width:$desktop) {
             @content;
         }
     }
