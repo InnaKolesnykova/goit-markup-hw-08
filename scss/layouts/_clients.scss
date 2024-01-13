@@ -18,6 +18,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+     @media screen and (max-width:480px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:480px) {
+        width: 210px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+    }
+
   }
 
   &__link {
@@ -29,6 +46,22 @@
     border-radius: 4px;
     border: 1px solid rgba(175, 177, 184, 1);
     transition: border-color var(--primary-transition);
+
+    @media screen and (max-width:480px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:480px) {
+        width: 210px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+    }
   }
 
   &__icon {
@@ -51,4 +84,11 @@
   display: flex;
   list-style: none;
   gap: 30px;
+
+
+  @media screen and (max-width:480px) {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
 }

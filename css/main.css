@@ -77,6 +77,11 @@ li {
 img {
   display: block;
 }
+@media screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
 
 * {
   margin: 0;
@@ -727,6 +732,26 @@ textarea::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .clients__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
+}
 .clients__link {
   width: 170px;
   height: 92px;
@@ -743,6 +768,26 @@ textarea::placeholder {
   border: 1px solid rgb(175, 177, 184);
   -webkit-transition: border-color var(--primary-transition);
   transition: border-color var(--primary-transition);
+}
+@media screen and (max-width: 480px) {
+  .clients__link {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__icon {
   fill: rgb(175, 177, 184);
@@ -762,6 +807,16 @@ textarea::placeholder {
   display: flex;
   list-style: none;
   gap: 30px;
+}
+@media screen and (max-width: 480px) {
+  .clients-list {
+    width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer-section {
@@ -924,6 +979,11 @@ a.nav-list__link {
 
 .job {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1200px) {
+  .job {
+    display: none;
+  }
 }
 .job__info {
   position: absolute;
