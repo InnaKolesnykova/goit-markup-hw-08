@@ -10,6 +10,28 @@
   max-width: 1600px;
   display: flex;
   margin: auto;
+
+    @media screen and (max-width:479px) {
+        height: 380px;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 100px 0;
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                rgba(47, 48, 58, 0.40)), url(../images/hero/Img-title-sm.jpg);
+                
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)), url(../images/hero/Img-title-sm@x2.jpg);
+        }
+    }
+
+ 
 }
 
 .main-title {
