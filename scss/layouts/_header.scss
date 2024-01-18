@@ -5,7 +5,12 @@
 .header-section {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 }
+
 
 .nav {
     margin-left: 93px;

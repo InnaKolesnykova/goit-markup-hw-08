@@ -103,7 +103,7 @@
 }
 
 .main-title {
-  width: 696px;
+  // width: 696px;
   color: var(--background-color);
   text-align: center;
   font-size: 44px;
@@ -124,8 +124,7 @@
         font-weight: 900;
         line-height: 42px;
         letter-spacing: 1.56px;
-        text-transform: uppercase;
-        margin: 0;
+        
     }
 
     @media screen and (min-width:768px) {

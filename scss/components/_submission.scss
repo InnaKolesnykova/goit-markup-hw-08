@@ -3,13 +3,28 @@
     gap: 12px;
     width: 100%;
     align-items: center;
+
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+   
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+  }
 }
 
 .submission {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 93px;
+    ;
 
     &__email {
     width: 100%;
@@ -26,8 +41,19 @@
     font-style: normal;
     letter-spacing: 0.48px;
     line-height: 20px;
-    }
     
+    @media screen and (min-width: 480px) {
+    min-width: 450px;
+  }
+    @media screen and (min-width: 1200px) {
+    margin-left: 93px
+  }
+    }
+
+   
+
+
+
     &__email:hover,
     &__email:focus {
     border-color: var(--brand-color);
@@ -45,6 +71,7 @@
     line-height: 20px;
     letter-spacing: 0.48px;
     color: rgba(255, 255, 255, 0.60);
+
     }
     
     &__btn {
@@ -72,6 +99,11 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+
+    @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 
 .submission-form button:hover,

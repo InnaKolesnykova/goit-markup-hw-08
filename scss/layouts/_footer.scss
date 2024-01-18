@@ -1,41 +1,64 @@
 .footer-section {
-    display: flex;
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 165px;
+
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 768px) {
     align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 0;
+  }
 }
 
+.footer-center {
+    @media screen and (max-width:1200px) {
+        text-align: center;
+    }
+}
+
+
 .footer {
-    background: #2F303A;
-    padding: 60px 0;
-    margin: auto;
+  background: #2f303a;
+  padding: 60px 0;
+  margin: auto;
 }
 
 .footer-logo {
-    margin-bottom:20px; 
-    display:block;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .adress-list {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .adress__item {
-    margin-bottom: 9px;
-    font-style: normal;
+  margin-bottom: 9px;
+  font-style: normal;
 }
 
 .adress__link-white {
-    color: var(--background-color);
-    font-family: var(--main-font);
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.42px;
+  color: var(--background-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
 }
 
 .adress__link {
-    color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .adress__link,
 .adress__link-white {
-    transition: color var(--primary-transition);
+  transition: color var(--primary-transition);
 }

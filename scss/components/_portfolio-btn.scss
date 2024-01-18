@@ -4,12 +4,31 @@
     gap: 8px;
     margin-bottom: 50px;
     list-style: none;
+
+    @media screen and (max-width: 480px) {
+   
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   
+  }
 }
+
+
+.project__link {
+
+    @media screen and (min-width: 480px) and (max-width: 768px){
+    width: 450px;
+}
+}
+
+
+
+
 
 .filter-btn {
     background-color: #F5F4FA;
     color: var(--main-color);
-    padding: 6px 22px;
+    padding: 6px 25px;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.48px;
