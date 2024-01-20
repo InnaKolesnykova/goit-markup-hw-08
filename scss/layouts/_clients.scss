@@ -63,7 +63,6 @@
         width: 170px;
     }
   }
-
   &__icon {
     fill: rgba(175, 177, 184, 1);
     width: 106px;
@@ -91,4 +90,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (min-width:768px) {
+    flex-wrap: wrap;
+    }
+
+
 }

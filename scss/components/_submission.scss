@@ -6,13 +6,13 @@
 
 
   @media screen and (min-width: 480px) {
-    max-width: 450px;
+    width: 450px;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
   @media screen and (min-width: 768px) {
-   
+   width: 450px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -45,6 +45,10 @@
     @media screen and (min-width: 480px) {
     min-width: 450px;
   }
+  @media screen and (min-width:768px) {
+    width: 450px;
+  }
+
     @media screen and (min-width: 1200px) {
     margin-left: 93px
   }
@@ -104,6 +108,12 @@
     @media screen and (min-width: 480px) {
     text-align: center;
   }
+
+  @media screen and (min-width:768px) {
+    text-align: center;
+  }
+
+
 }
 
 .submission-form button:hover,

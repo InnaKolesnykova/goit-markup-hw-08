@@ -615,13 +615,18 @@ textarea::placeholder {
 }
 @media screen and (min-width: 480px) {
   .submission-form {
-    max-width: 450px;
+    width: 450px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .submission-form {
+    width: 450px;
   }
 }
 .submission {
@@ -653,6 +658,11 @@ textarea::placeholder {
 @media screen and (min-width: 480px) {
   .submission__email {
     min-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .submission__email {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -743,6 +753,11 @@ textarea::placeholder {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {
+  .submission-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
   .submission-title {
     text-align: center;
   }
@@ -871,6 +886,12 @@ textarea::placeholder {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) {
+  .clients-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .footer-section {
   display: -webkit-box;
@@ -906,12 +927,9 @@ textarea::placeholder {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .footer-center {
-    text-align: center;
-  }
+.footer-center {
+  text-align: center;
 }
-
 .footer {
   background: #2f303a;
   padding: 60px 0;
@@ -962,14 +980,14 @@ textarea::placeholder {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 480px) {
-  .header-section {
-    max-width: 480px;
-  }
-}
 
 .nav {
   margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    margin-left: 87px;
+  }
 }
 
 .nav-list {
@@ -1019,9 +1037,24 @@ a.nav-list__link {
   margin-left: auto;
   list-style-type: none;
 }
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 10px;
+  }
+}
 
 .contacts-list__item:first-child {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-list__item:first-child {
+    margin-right: 0px;
+  }
 }
 
 .contacts-link {
@@ -1038,6 +1071,11 @@ a.nav-list__link {
   -webkit-transition: color var(--primary-transition);
   transition: color var(--primary-transition);
 }
+@media screen and (min-width: 768px) {
+  .contacts-link {
+    margin-right: 0px;
+  }
+}
 .contacts-link__icon {
   fill: var(--secondary-color);
   margin-right: 10px;
@@ -1047,6 +1085,10 @@ a.nav-list__link {
 .contacts-link__icon:hover, .contacts-link__icon:focus {
   color: var(--brand-color);
   fill: var(--brand-color);
+}
+
+.contacts-item-phone {
+  margin-right: 17px;
 }
 
 .nav-list__link.current {
@@ -1212,6 +1254,7 @@ a.nav-list__link {
   .section-1 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Img-title-md.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img-title-md.jpg);
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1268,13 +1311,14 @@ a.nav-list__link {
 @media screen and (min-width: 768px) {
   .main-title {
     font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-title {
     padding-top: 0;
-    font-size: 44px;
-    letter-spacing: 2.64px;
   }
 }
 
@@ -1378,6 +1422,12 @@ a.nav-list__link {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) {
+  .section-2__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 480px) {
   .section-2__item {
     width: 100%;
@@ -1455,6 +1505,12 @@ a.nav-list__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
