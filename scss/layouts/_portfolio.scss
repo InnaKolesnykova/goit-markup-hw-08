@@ -11,12 +11,20 @@
 
     &__item {
     max-width: 370px;
+
+    @media screen and (max-width:768px){
+      width: 354px; 
+    }
 }
 
     &__link {
     text-decoration: none;
     display: block;
     transition: box-shadow var(--primary-transition);
+
+    @media screen and (max-width:768px){
+      width: 354px; 
+    }
 }
 
     &__link:hover,
@@ -34,6 +42,9 @@
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
+    flex-grow: 1;
+
+
 }
 
     &__title {
@@ -55,9 +66,15 @@
 
 
 
+
 .card-box {
     position: relative;
     overflow: hidden;
 }
 
+.project__name:first-child {
+  @media screen and (max-width:768px) {
+        flex-grow: 1;
 
+    }
+}
