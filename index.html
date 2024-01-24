@@ -56,38 +56,43 @@
         </ul>
       </div>
 
-      <button type="button" class="mob-btn" data-menu-button>
-        <svg width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-          <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+      <button type="button" aria-expanded="false" class="mob-btn" data-class="mob-btn" data-menu-button>
+        <svg class="icon-open" width="24"height="24">
+          <use class="open-icon" href="sprite.svg#icon-open"></use>
+        </svg>
+        <svg  class="icon-close" aria-label="мобільне меню"
+          fill="#000000"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path class="close-icon"
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
         </svg>
       </button>
 
       <div class="mob-menu" id="mob-menu" data-menu>
         <ul class="mob-list">
-          <li class="mob-item">
-            <a href="index.html" class="mob-link">Студія</a>
+          <li class="mob-menu-item">
+            <a href="index.html" class="mob-menu-item-link">Студія</a>
           </li>
-          <li>
-            <a href="portfolio.html" class="mob-link">Портфоліо</a>
+          <li class="mob-menu-item2">
+            <a href="portfolio.html" class="mob-list-link mob-link mob-menu-link">Портфоліо</a>
           </li>
-          <li>
-            <a href="./" class="mob-link">Контакти</a>
+          <li class="mob-menu-item2">
+            <a href="./" class="mob-list-link mob-link mob-menu-link">Контакти</a>
           </li>
         </ul>
         <ul class="mob-menu__contacts">
           <li class="mob-menu__contacts-item">
-            <a href="">info@devstudio.com</a>
+            <a  class="mob-menu__contacts-link mob-link" href="">info@devstudio.com</a>
           </li>
           <li class="mob-menu__contacts-item">
-            <a href="">+38 096 111 11 11</a>
+            <a  class="mob-menu__contacts-link2 mob-menu-link" href="">+38 096 111 11 11</a>
           </li>
         </ul>
         <ul class="mob-menu__socials">
