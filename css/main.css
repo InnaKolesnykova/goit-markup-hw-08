@@ -149,6 +149,12 @@ section {
   transition: transform var(--primary-transition);
   transition: transform var(--primary-transition), -webkit-transform var(--primary-transition);
 }
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 .modal__btn {
   position: absolute;
   top: 8px;
@@ -245,7 +251,7 @@ section {
   -webkit-transition: border var(--primary-transition);
   transition: border var(--primary-transition);
 }
-.modal__icon {
+.modal__input__icon {
   top: 11px;
   bottom: 11px;
   left: 12px;
@@ -254,27 +260,23 @@ section {
   -webkit-transition: fill var(--primary-transition);
   transition: fill var(--primary-transition);
 }
-
-.backdrop.is-hidden .modal {
+.modal .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
 }
-
-.btn__close {
+.modal .btn__close {
   -webkit-transition: fill var(--primary-transition);
   transition: fill var(--primary-transition);
 }
-
-.modal-form {
+.modal .modal-form {
   border-radius: 4px;
   background: var(--background-color);
 }
-
-.label {
+.modal .label {
   margin-top: 4px;
   position: relative;
 }
-.label__text {
+.modal .label__text {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
@@ -288,41 +290,32 @@ section {
   transition: border var(--primary-transition);
   cursor: pointer;
 }
-
-textarea::-webkit-input-placeholder {
+.modal textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-textarea::-moz-placeholder {
+.modal textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-textarea:-ms-input-placeholder {
+.modal textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-textarea::-ms-input-placeholder {
+.modal textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-textarea::placeholder {
+.modal textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.checkbox:checked + .checkbox__vector .checkbox__vector-icon {
+.modal .checkbox:checked + .checkbox__vector .checkbox__vector-icon {
   opacity: 1;
 }
-
-.checkbox:checked + .checkbox__vector {
+.modal .checkbox:checked + .checkbox__vector {
   background-color: var(--brand-color);
   outline: transparent;
 }
-
-.checkbox:focus + .checkbox__vector {
+.modal .checkbox:focus + .checkbox__vector {
   outline: 2px solid var(--brand-color);
 }
-
-.checkbox__vector {
+.modal .checkbox__vector {
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -331,13 +324,12 @@ textarea::placeholder {
   -webkit-transition: background-color var(--primary-transition);
   transition: background-color var(--primary-transition);
 }
-.checkbox__vector__vector-icon {
+.modal .checkbox__vector__vector-icon {
   opacity: 0;
   -webkit-transition: opacity var(--primary-transition);
   transition: opacity var(--primary-transition);
 }
-
-.agree__link {
+.modal .agree__link {
   color: var(--brand-color);
   font-family: var(--main-font);
   font-size: 14px;
@@ -348,8 +340,7 @@ textarea::placeholder {
   text-decoration-line: underline;
   cursor: pointer;
 }
-
-.submit-btn {
+.modal .submit-btn {
   color: var(--background-color);
   width: 200px;
   height: 50px;
@@ -375,15 +366,13 @@ textarea::placeholder {
   -webkit-transition: background-color var(--primary-transition);
   transition: background-color var(--primary-transition);
 }
-
-.submit-btn:hover,
-.submit-btn:focus,
-.btn:hover,
-.btn:focus {
+.modal .submit-btn:hover,
+.modal .submit-btn:focus,
+.modal .btn:hover,
+.modal .btn:focus {
   background-color: #188ce8;
 }
-
-.btn {
+.modal .btn {
   border-radius: 4px;
   background: var(--brand-color);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -401,8 +390,7 @@ textarea::placeholder {
   margin: auto;
   padding: 10px 32px;
 }
-
-.btn:active {
+.modal .btn:active {
   background-color: var(--brand-color);
 }
 
@@ -1121,7 +1109,12 @@ a.nav-list__link {
 .job {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 480px) {
+  .job {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .job {
     display: none;
   }

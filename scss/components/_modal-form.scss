@@ -27,6 +27,13 @@
     padding: 40px;
     transition: transform var(--primary-transition);
 
+
+    @media screen and (max-width:768px){
+      width: 450px;
+      height: 609px; 
+    }
+
+
     &__btn {
     position: absolute;
     top: 8px;
@@ -114,8 +121,8 @@
     padding-left: 40px;
     cursor: pointer;
     transition: border var(--primary-transition);
-    }
-                
+
+              
     &__icon {
     top: 11px;
     bottom: 11px;
@@ -246,4 +253,5 @@ textarea::placeholder {
 
 .btn:active {
     background-color: var(--brand-color);
+}
 }
