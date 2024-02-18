@@ -978,6 +978,19 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 480px) {
+  .header-section {
+    display: none;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .nav {
   margin-left: 93px;
