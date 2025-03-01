@@ -49,7 +49,7 @@ body {
   color: var(--background-color);
 }
 
-button {
+.btn-section-1 {
   border: none;
 }
 
