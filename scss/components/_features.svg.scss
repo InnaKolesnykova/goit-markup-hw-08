@@ -1,0 +1,20 @@
+.feateres__features-block {
+    height: 120px;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #F5F4FA;
+    
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+
+    @media screen and (min-width:480px) {
+        
+    }
+}

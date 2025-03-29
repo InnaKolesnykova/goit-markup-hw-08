@@ -1,0 +1,35 @@
+.feateres {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
+}
+
+.feateres__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feateres__list-link {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width:480px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 270px;
+    }
+}

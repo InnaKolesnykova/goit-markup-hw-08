@@ -1,20 +1,87 @@
-.container {
-    
-    padding-left: 15px;
-    padding-right: 15px;
+.conteiner {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @media screen and (min-width:480px) {
         width: 480px;
-        // height: 60px;
     }
 
     @media screen and (min-width:768px) {
-        width: 720px;
+        width: 768px;
     }
 
     @media screen and (min-width:1200px) {
         width: 1200px;
+    }
+}
+
+.page-header-conteiner {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-personnel {
+    display: flex;
+    text-align: center;
+}
+
+.main-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 94px;
+}
+
+.conteiner-footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cards-conteiner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer-conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+    @media screen and (min-width:480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px 165px;
+
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width:768px) {
+        align-items: baseline;
+    }
+
+    @media screen and (min-width:1200px) {
+        gap: 0;
+    }
+}
+
+.join-footer-conteiner {
+    margin-left: 0;
+
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
